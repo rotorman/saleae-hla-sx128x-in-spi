@@ -1,0 +1,13 @@
+{
+  "name": "SX128x_IN",
+  "apiVersion": "1.0.0",
+  "author": "Risto Kõiva",
+  "version": "0.0.1",
+  "description": "Semtech SX128x SPI IN HLA",
+  "extensions": {
+    "HLA_SX128x": {
+      "type": "HighLevelAnalyzer",
+      "entryPoint": "sx128x_in.sx128x_in"
+    }
+  }
+}
