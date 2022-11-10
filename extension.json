@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "description": "Semtech SX128x SPI IN HLA",
   "extensions": {
-    "HLA_SX128x": {
+    "Semtech SX128x SPI in": {
       "type": "HighLevelAnalyzer",
       "entryPoint": "sx128x_in.sx128x_in"
     }
