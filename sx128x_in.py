@@ -73,15 +73,22 @@ class sx128x_in(HighLevelAnalyzer):
             if len(mosi) >= 3 and len(miso) >= 3 and mosi[0] == 0x03:
                 pType = "UNDEFINED"
                 if miso[2] == PacketType.GFSK:
+                    self.packetType = PacketType.GFSK
                     pType = "GFSK"
                 if miso[2] == PacketType.LORA:
+                    self.packetType = PacketType.LORA
                     pType = "LORA"
                 if miso[2] == PacketType.RANGING:
+                    self.packetType = PacketType.RANGING
                     pType = "RANGING"
                 if miso[2] == PacketType.FLRC:
+                    self.packetType = PacketType.FLRC
                     pType = "FLRC"
                 if miso[2] == PacketType.BLE:
+                    self.packetType = PacketType.BLE
                     pType = "BLE"
+                if pType == "UNDEFINED":
+                    self.packetType = PacketType.UNDEFINED
                 return { "dataout": "GetPacketType()=" + pType }
             
             # 0x15 = GetIrqStatus()
