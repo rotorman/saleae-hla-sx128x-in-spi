@@ -1,5 +1,5 @@
 {
-  "name": "SX128x_IN",
+  "name": "Semtech SX128x SPI in",
   "apiVersion": "1.0.0",
   "author": "Risto Kõiva",
   "version": "0.0.1",
